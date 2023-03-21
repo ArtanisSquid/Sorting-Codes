@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+void BubbleSort(int n, int tab[]) {
+	for (int j = n - 1; j > 0; j--) {
+		for (int i = 0; i < j; i++) {
+			if (tab[i] > tab[i + 1]) {
+				swap(tab[i], tab[i + 1]);
+			}
+		}
+	}
+}
+
+
+
+int main() {
+	int n;
+	int tab[n];
+  cout << "How much numbers to sort: " << endl;
+  cin >> n;
+  for(int i=0;i<n;i++) {
+    cin >> tab[i];
+  }
+  BubbleSort(n,tab)
+  
+  for (int i = 0; i < n; i++) {
+    cout << tab[i] << " ";
+  }
+  
+  return 0;
+}
