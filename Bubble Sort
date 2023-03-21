@@ -15,13 +15,13 @@ void BubbleSort(int n, int tab[]) {
 
 int main() {
 	int n;
+  cin >> n;
 	int tab[n];
   cout << "How much numbers to sort: " << endl;
-  cin >> n;
   for(int i=0;i<n;i++) {
     cin >> tab[i];
   }
-  BubbleSort(n,tab)
+  BubbleSort(n,tab);
   
   for (int i = 0; i < n; i++) {
     cout << tab[i] << " ";
